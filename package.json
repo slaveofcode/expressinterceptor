@@ -1,0 +1,33 @@
+{
+  "name": "expressinterceptor",
+  "version": "1.0.0",
+  "description": "Simple expressjs interceptor middleware to grab http information in and out on your express application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slaveofcode/expressinterceptor.git"
+  },
+  "keywords": [
+    "express",
+    "interceptor",
+    "interceptor",
+    "express",
+    "middleware",
+    "express",
+    "log"
+  ],
+  "author": "Aditya Kresna Permana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slaveofcode/expressinterceptor/issues"
+  },
+  "homepage": "https://github.com/slaveofcode/expressinterceptor#readme",
+  "dependencies": {
+    "got": "^9.0.0",
+    "hijackresponse": "^3.0.0",
+    "shortid": "^2.2.13"
+  }
+}
