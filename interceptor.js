@@ -28,14 +28,14 @@ const makeInterceptor = (serverUrl, appName) => {
       const sendParams = ["OPTIONS", "GET", "DELETE"].includes(req.method)
         ? baseParams
         : Object.assign(baseParams, {
-            body
-          });
+          body
+        });
 
       try {
         await reqHTTP.post("/in", {
           body: sendParams
         });
-      } catch (err) {} // eslint-disable-line
+      } catch (err) { } // eslint-disable-line
     };
   };
 
@@ -48,16 +48,16 @@ const makeInterceptor = (serverUrl, appName) => {
             key,
             headers: res._headers,
             statusCode: res.statusCode,
-            body
+            body: body
           }
         });
-      } catch (err) {} // eslint-disable-line
+      } catch (err) { } // eslint-disable-line
     };
   };
 
-  return { 
-    inputInterceptor: makeInterceptInput(appName), 
-    outputInterceptor: makeInterceptOutput(appName) 
+  return {
+    inputInterceptor: makeInterceptInput(appName),
+    outputInterceptor: makeInterceptOutput(appName)
   };
 };
 
