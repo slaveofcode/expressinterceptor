@@ -5,20 +5,20 @@ Simple expressjs interceptor middleware to grab information from outside and to 
 
 Require node version `6` or higher
 
-> npm i expressinterceptor
+> npm i express-interceptor-middleware
 
 
 Then attach the middleware on your express application middleware.
 
     if (env !== 'production') {
-      const middleware = require('expressinterceptor')('MyWebsite');
+      const middleware = require('express-interceptor-middleware')('MyWebsite');
       app.use(middleware);
     }
 
 This setting will point out to express interceptor server which default set to `localhost:1831`. You can also change it if you have a different settings on your server interceptor by passing an optional parameter.
 
     if (env !== 'production') {
-      const middleware = require('expressinterceptor')('MyWebsite', 'http://localhost:8080');
+      const middleware = require('express-interceptor-middleware')('MyWebsite', 'http://localhost:8080');
       app.use(middleware);
     }
 
