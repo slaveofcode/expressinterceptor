@@ -1,6 +1,6 @@
 {
   "name": "express-interceptor-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple expressjs interceptor middleware to grab http information in and out on your express application",
   "main": "index.js",
   "scripts": {
